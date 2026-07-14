@@ -1,62 +1,20 @@
-# songww
+# Igor First Project
 
-Portfolio project with a small Python backend and static frontend assets.
+Небольшой веб-проект с Python-бэкендом и фронтендом: портфолио-страница, музыкальная игра и отдельная страница для работы с фото.
 
-## Project structure
+## Основные файлы
 
-- `backend/` - FastAPI application and Python dependencies
-- `frontend/` - HTML, CSS, JavaScript, images, audio, and SVG assets
-- `run.command` - starts the backend locally and opens a public tunnel through `localhost.run`ONLY FOR LINUX TERMINAL
-- `run-local.command` - starts the backend only on `http://127.0.0.1:8000`ONLY FOR LINUX TERMINAL
-- `kill.command` - stops the backend and also closes public tunnel processes ONLY FOR LINUX TERMINAL
-- `kill-local.command` - stops only the local backend processes ONLY FOR LINUX TERMINAL
-
-All `*.command` files in this repository are terminal bash scripts. Start them with `bash ./file.command`.
-
-## Run scripts
-
-### `run.command`
-
-Use this when you want to open the project publicly for testing or sharing.
-
-What it does:
-
-- starts `uvicorn` from `.venv`
-- waits until the app is available on port `8000`
-- opens a public SSH tunnel through `localhost.run`
-- prints a public URL that can be shared
-
-Default mode is public:
-
-```bash
-./run.command
-```
-
-### `run-local.command`
-
-Use this when you only need the project on your own machine.
-
-What it does:
-
-- stops an older process on port `8000` if needed
-- starts `uvicorn` with reload on `127.0.0.1:8000`
-
-Run it with:
-
-```bash
-./run-local.command
-```
-
-### Stop scripts
-
-To stop everything including the public tunnel:
-
-```bash
-./kill.command
-```
-
-To stop only the local backend:
-
-```bash
-./kill-local.command
-```
+- `backend/main.py` - FastAPI-бэкенд: раздача фронтенда, API для музыкальной части и работа с Yandex Music.
+- `frontend/index.html` - главная страница портфолио.
+- `frontend/game.html` - страница музыкальной игры `uknowursong`.
+- `frontend/photo.html` - отдельная страница `photo++`.
+- `frontend/app.js` - фронтенд-логика музыкальной игры и работы с API.
+- `frontend/portfolio.js` - логика главной страницы портфолио.
+- `frontend/photo.js` - логика страницы `photo++`.
+- `frontend/style.css` - стили музыкальной игры.
+- `frontend/portfolio.css` - стили главной страницы.
+- `frontend/photo.css` - стили страницы `photo++`.
+- `run.command` - запуск проекта с публичным туннелем.
+- `run-local.command` - локальный запуск без туннеля.
+- `kill.command` - остановка локального сервера и публичного туннеля.
+- `kill-local.command` - остановка только локального сервера.
