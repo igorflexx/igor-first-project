@@ -6,10 +6,10 @@ Portfolio project with a small Python backend and static frontend assets.
 
 - `backend/` - FastAPI application and Python dependencies
 - `frontend/` - HTML, CSS, JavaScript, images, audio, and SVG assets
-- `run.command` - starts the backend locally and opens a public tunnel through `localhost.run`
-- `run-local.command` - starts the backend only on `http://127.0.0.1:8000`
-- `kill.command` - stops the backend and also closes public tunnel processes
-- `kill-local.command` - stops only the local backend processes
+- `run.command` - starts the backend locally and opens a public tunnel through `localhost.run`ONLY FOR LINUX TERMINAL
+- `run-local.command` - starts the backend only on `http://127.0.0.1:8000`ONLY FOR LINUX TERMINAL
+- `kill.command` - stops the backend and also closes public tunnel processes ONLY FOR LINUX TERMINAL
+- `kill-local.command` - stops only the local backend processes ONLY FOR LINUX TERMINAL
 
 ## Run scripts
 
